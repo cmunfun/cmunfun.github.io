@@ -2,7 +2,7 @@
 
 title: Unfun!
 # disabled because we are using a custom domain
-#baseurl: /hagura # name of the repository
+#baseurl: /unfun # name of the repository
 email: unfun@unfun.fun
 
 highlighter: rouge
