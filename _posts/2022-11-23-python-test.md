@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Python基础教程"
-date:   2022-11-23 15:34:00 +0530
+title:  "Python"
 ---
+
 # Python基础
 
 # Day1 First
@@ -4526,11 +4526,12 @@ per = Person()
 
 
 ​    
-     # 私有方法
-     # 接吻
-     def __kiss(self):
-         print("一吻定终身!")
-    
+​     # 私有方法
+​     # 接吻
+​     def __kiss(self):
+​         print("一吻定终身!")
+​    
+
      # 类中可以访问私有方法
      def love(self,relationship):
          if relationship == "情侣关系":
@@ -4764,12 +4765,13 @@ c.在继承上【相同点】
 
 
 ​    
-    魔术方法: __str__() 和 __repr__()
-    class Person(object):
-        def __init__(self,name,age):
-            self.name = name
-            self.age = age
-    
+​    魔术方法: __str__() 和 __repr__()
+​    class Person(object):
+​        def __init__(self,name,age):
+​            self.name = name
+​            self.age = age
+​    
+
         def swim(self):
             print("游泳的方法")
     
@@ -4846,13 +4848,14 @@ class 子类类名（父类类名）:
 
 
 ​    
-    有构造函数的单继承
-    # 父类
-    class Animal(object):
-     def __init__(self,name,sex):
-         self.name = name
-         self.sex = sex
-    
+​    有构造函数的单继承
+​    # 父类
+​    class Animal(object):
+​     def __init__(self,name,sex):
+​         self.name = name
+​         self.sex = sex
+​    
+
      def eat(self):
          print("所有的动物都有捕食的技能")
     
@@ -5528,22 +5531,23 @@ re.I: 忽略字母大小写
 
 
 ​    
-    print(re.search("goog*le","goole")) # <re.Match object; span=(0, 5), match='goole'>
-    print(re.search("goog*le","googgggggggggggle")) # <re.Match object; span=(0, 17), match='googgggggggggggle'>
+​    print(re.search("goog*le","goole")) # <re.Match object; span=(0, 5), match='goole'>
+​    print(re.search("goog*le","googgggggggggggle")) # <re.Match object; span=(0, 17), match='googgggggggggggle'>
 
 
 ​    
-    print(re.search("goog{3}le","goole")) # None
-    print(re.search("goog{3}le","google")) # None
-    print(re.search("goog{3}le","googgggggggggle")) # None
-    print(re.search("goog{3}le","googggle")) # <re.Match object; span=(0, 8), match='googggle'>
+​    print(re.search("goog{3}le","goole")) # None
+​    print(re.search("goog{3}le","google")) # None
+​    print(re.search("goog{3}le","googgggggggggle")) # None
+​    print(re.search("goog{3}le","googggle")) # <re.Match object; span=(0, 8), match='googggle'>
 
 
 ​    
-    print(re.search("goog{3,6}le","goole"))  # None
-    print(re.search("goog{3,6}le","googgle"))  # None
-    print(re.search("goog{3,6}le","googgggle"))  # <re.Match object; span=(0, 9), match='googgggle'>
-    
+​    print(re.search("goog{3,6}le","goole"))  # None
+​    print(re.search("goog{3,6}le","googgle"))  # None
+​    print(re.search("goog{3,6}le","googgggle"))  # <re.Match object; span=(0, 9), match='googgggle'>
+​    
+
     # {3,}: 表示前面的字符至少出现3次
     print(re.search("goog{3,}le","goole")) # None
     print(re.search("goog{3,}le","google")) # None
