@@ -1,12 +1,46 @@
 ---
-layout: compress
+# layout: compress
 ---
+<!DOCTYPE html>
+<html>
 
-{% assign assets_base_url = site.url %}
-{% if site.cdn.jsdelivr.enabled %}
-{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
-{% endif %}
-{% assign assets_images_url = '<img src="' | append: site.url | append: "/images" %}
-{% include header.html %}
-    {{ content | replace: '<img src="/images', assets_images_url }}
-{% include footer.html %}
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+
+        {% seo %}
+    </head>
+
+    <body style="background-color: rgb(255, 255, 255)">
+        <script async src="{{site.baseurl}}/assets/js/theme.min.js"></script>
+        <header>
+            <a href="{{site.baseurl}}/">
+                <div class="home"></div>
+            </a>
+        </header>
+
+        <main>
+            <article>
+                {{ content }}
+            </article>
+        </main>
+
+        <footer>
+            <div class="links">
+                <a href="{{site.baseurl}}/about/">About</a>
+                <a href="{{site.baseurl}}/contact/">Contact</a>
+                <a class="theme" onclick="theme()">Dark/Light</a>
+            </div>
+            <p class="copy">
+                <small>Copyrights by
+                    {{site.title}}
+                    | Developed by
+                    <a href="http://webjeda.com">webjeda</a>
+                </small>
+            </p>
+        </footer>
+        {% include analytics.html %}
+    </body>
+
+</html>

@@ -1,187 +1,50 @@
-# ---------------- #
-#   Main Configs   #
-# ---------------- #
-baseurl:
-url: https://www.unfun.fun
-date_format: "ordinal"
-title: 安范儿
-subtitle: "一个诗人"
-description: "UNFUN BLOG"
-keywords: CM, Unfun, cmunfun, 一个诗人
-timezone: Asia/Shanghai
-encoding: "utf-8"
-# 页面左下角显示的年份
-since: 2022
-# 源码仓库，请替换成自己的
-repository: cmunfun/cmunfun.github.io
-# 对 css 和 js 资源的 cdn 加速配置
-cdn:
-    jsdelivr:
-        enabled: false
-# 可选组件配置
-components:
-    # 分享
-    # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
-    share:
-        enabled: false
-        hide-platforms: qq,facebook
-    # 不蒜子访问统计
-    busuanzi:
-        enabled: false
-        start_date: 2022-11-22
-    # My Popular Repositories
-    side_bar_repo:
-        enabled: true
-        limit: 5
-    # 文章字数统计
-    word_count:
-        enabled: true
-    # 页面右上角，以及「关于」页面的二维码
-    # 修改图片请替换 assets/images/qrcode.jpg
-    qrcode:
-        enabled: false
-        image_alt: 诗人
-    # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
-    wiki:
-        view: cate
-# 压缩页面内容
-compress_html:
-  clippings: all
-  comments: ["<!--", "-->"]
-# 代码高亮风格，支持的 theme 列表见 https://github.com/mzlogin/rouge-themes
-highlight_theme: github
+### your site title here
 
-# ---------------- #
-#      Author      #
-# ---------------- #
-author: CM
-organization:
-organization_url:
-github_username: cmunfun
-location: Shenzhen, China
-email: unfun@unfun.fun
+title: Hagura - Light!
+# disabled because we are using a custom domain
+#baseurl: /hagura # name of the repository
+email: your@email.com
 
-# ---------------- #
-#    Navigation    #
-# ---------------- #
-navs:
-  -
-    href: /
-    label: 首页
-
-  -
-    href: /categories/
-    label: 分类
-
-#   -
-#     href: /archives/
-#     label: 归档
-
-#   -
-#     href: /open-source/
-#     label: 开源
-
-  -
-    href: /wiki/
-    label: 维基
-
-  -
-    href: /links/
-    label: 链接
-
-  -
-    href: /about/
-    label: 关于
-
-# ---------------- #
-#       RSS        #
-# ---------------- #
-subscribe_rss: /feed.xml
-
-# ---------------- #
-#      Jekyll      #
-# ---------------- #
-markdown: kramdown
-kramdown:
-    input: GFM
 highlighter: rouge
-paginate: 10
-lsi: false
-quiet: false
-excerpt_separator: "\n\n"
-permalink: /:year/:month/:day/:title/
+
+permalink: /:title/
+paginate: 4
+paginate_path: /page:num/
+
+
+
+# Tracker
+analytics: UA-83979019-4
+
+# Comments
+disqus-shortname: webjeda-demo
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+
 plugins:
-    - jekyll-github-metadata
-    - rouge
-#     - jekyll-html-pipeline
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
-#     - jekyll-mentions
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
-    fragments:
-        output: true
-        permalink: /fragment/:path/
-
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
-comments_provider:
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# disqus 配置参考：https://disqus.com
-disqus:
-    username:
-# gitment 配置参考：https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner:
-    repo:
-    oauth:
-        client_id:
-        client_secret:
-# gitalk 配置参考：https://github.com/gitalk/gitalk#install
-gitalk:
-    owner:
-    repo:
-    clientID:
-    clientSecret:
-# utterances 配置参考：https://utteranc.es/
-utterances:
-    repo:
-# beaudar 配置参考：https://beaudar.lipk.org/
-beaudar:
-    repo:
-# giscus 配置参考：https://giscus.app/zh-CN
-giscus:
-    repo:
-    repo-id:
-    category:
-    category-id:
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
-
-# ---------------- #
-#      Search      #
-# ---------------- #
-simple_jekyll_search:
-    # 是否支持全文搜索
-    fulltext: false
-    # 最多显示多少条搜索结果
-    limit: 10
-
-# ---------------- #
-#      Google      #
-# ---------------- #
-google:
-    analytics_id:
-    adsense:
-        footer: true
-        sidebar: true
-        sidebar-detail: true
-        content_header: false
-        content_footer: false
+  - jekyll-seo-tag
+  - jekyll-paginate
