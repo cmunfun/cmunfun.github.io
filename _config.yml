@@ -2,7 +2,7 @@
 
 title: Unfun!
 # disabled because we are using a custom domain
-#baseurl: /unfun # name of the repository
+#baseurl: /cmunfun # name of the repository
 email: unfun@unfun.fun
 
 highlighter: rouge
@@ -14,10 +14,10 @@ paginate_path: /page:num/
 
 
 # Tracker
-analytics: UA-83979019-4
+# analytics: UA-83979019-4
 
 # Comments
-disqus-shortname: webjeda-demo
+# disqus-shortname: webjeda-demo
 
 
 #optimization

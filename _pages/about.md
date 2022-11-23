@@ -5,9 +5,7 @@ permalink: /about/
 published: true
 ---
 
-For more themes please visit [https://jekyll-themes.com](https://jekyll-themes.com){: target="_blank"}
-
-Does the theme deserve a star?
+Does the website deserve a star?
 
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/cmunfun/cmunfun.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star cmunfun/cmunfun.github.io on GitHub">Star</a>
