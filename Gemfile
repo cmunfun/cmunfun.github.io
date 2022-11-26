@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# This will help ensure the proper Jekyll version is running.
+# 确保运行正确的Jekyll版本。
 gem "jekyll"
 
 group :jekyll_plugins do

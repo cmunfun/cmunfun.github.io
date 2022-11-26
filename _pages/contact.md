@@ -1,9 +1,9 @@
 ---
-title: Contact
+title: 联系方式
 layout: post
 permalink: /contact/
 ---
 
-May be a contact form.
+联系方式
 
 Email: <a href="mailto:{{site.email}}">{{site.email}}</a>

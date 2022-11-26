@@ -1,27 +1,15 @@
-### your site title here
-
+### 站点标题
 title: Unfun!
-# disabled because we are using a custom domain
-#baseurl: /cmunfun # name of the repository
+# 默认URL已禁用，因为正在使用自定义域名
+# 默认URL: /cmunfun # 仓库名称
 email: unfun@unfun.fun
-
 highlighter: rouge
-
 permalink: /:title/
 paginate: 4
 paginate_path: /page:num/
 
-
-
-# Tracker
-# analytics: UA-83979019-4
-
-# Comments
-# disqus-shortname: webjeda-demo
-
-
-#optimization
-#compress.html
+# 配置优化
+# HTML压缩
 compress_html:
   clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
   comments: ["<!-- ", " -->"]
@@ -32,19 +20,21 @@ compress_html:
   profile: false
   startings: []
 
-
+# 字体文件
 sass:
   sass_dir: /assets/css/_sass
   style: compressed
 
+# 页面调用
 include:
   - _pages
 
+# 页面排除
 exclude:
   - README.md
   - LICENSE.md
 
-
+# 插件
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate

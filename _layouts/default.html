@@ -1,9 +1,10 @@
 ---
 # layout: compress
 ---
+<!-- 默认页 -->
 <!DOCTYPE html>
 <html>
-
+<!-- SEO -->
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -11,7 +12,7 @@
 
         {% seo %}
     </head>
-
+<!-- 返回按钮 -->
     <body style="background-color: rgb(255, 255, 255)">
         <script async src="{{site.baseurl}}/assets/js/theme.min.js"></script>
         <header>
@@ -25,12 +26,12 @@
                 {{ content }}
             </article>
         </main>
-
+<!-- 页脚 -->
         <footer>
             <div class="links">
-                <a class="theme" onclick="theme()">Dark/Light</a>
-                <a href="{{site.baseurl}}/about/">About</a>
-                <a href="{{site.baseurl}}/contact/">Contact</a>
+                <a class="theme" onclick="theme()">暗/亮</a>
+                <a href="{{site.baseurl}}/about/">关于</a>
+                <a href="{{site.baseurl}}/contact/">联系</a>
                 <br>
             </div>
         </footer>
