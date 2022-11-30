@@ -1,5 +1,5 @@
 ---
-title: 联系方式
+title: Contact
 layout: post
 permalink: /contact/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Thanks for those stars!"
+title:  "Welcome!"
 ---
 
 欢迎访问我的[博客](https://github.com/cmunfun/cmunfun.github.io){: target="_blank"}。

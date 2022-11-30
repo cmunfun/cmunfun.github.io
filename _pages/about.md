@@ -1,10 +1,10 @@
 ---
-title: 关于安范儿
+title: About
 layout: post
 permalink: /about/
 published: true
 ---
-
+随便记录一下！
 这个网站值得一星么?
 
 <!-- 将此标记放在您希望按钮呈现的位置 -->
