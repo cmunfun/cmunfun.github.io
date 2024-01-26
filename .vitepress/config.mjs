@@ -3,7 +3,7 @@ import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/cmunfun.github.io/',
+  base:'/',
   head: [["link", { rel: "icon", href: "/logo.svg" }]],
   title: "UNFUN Project",
   description: "A Awesome Pages",
