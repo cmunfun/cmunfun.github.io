@@ -14,22 +14,21 @@ export default defineConfig({
     // 顶部导航栏配置
     nav: [
       {
-        text: "Python",
+        text: "Ai",
         items: [
-          { text: "Basic Grammar", link: "/docs/python/base" },
-          { text: "Spider", link: "/docs/python/spider" },
+          { text: "Ai Base", link: "/docs/ai/base" },
         ],
       }
     ],
     // 侧边栏配置，自动生成侧边栏
-    sidebar: [
-      { "/docs/python/base": set_sidebar("docs/python/base") },
-      { "/docs/python/spider": set_sidebar("docs/python/spider") },
-    ],
-    navbar: true, //开启导航栏
+    // sidebar: [
+    //   { "/docs/python/base": set_sidebar("docs/python/base") },
+    //   { "/docs/python/spider": set_sidebar("docs/python/spider") },
+    // ],
+    navbar: false, //开启导航栏
     sidebar: true, // 关闭侧边栏
     lastUpdated: true, // 显示上次修改时间
-    // aside: "left", // 设置右侧侧边栏在左侧显示
+    aside: "left", // 设置右侧侧边栏在左侧显示
     // 社交链接,国内需要svg设置
     socialLinks: [
       { icon: "github", link: "https://github.com/cmunfun" }

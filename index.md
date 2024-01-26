@@ -7,12 +7,12 @@ hero:
   text: "A Awesome Pages"
   tagline: pages
   image:
-    src: /background.svg
+    src: /background.png
     alt: 背景图
   actions:
     - theme: brand
       text: Page Introduction
-      link: /docs/my-index/pages-introduction
+      link: /docs/pages-introduction/pages-introduction
 
 features:
   - title: 💡 Tips
