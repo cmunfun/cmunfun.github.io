@@ -3,23 +3,22 @@
 layout: home
 
 hero:
-  name: "UNFUN Project"
-  text: "A Awesome Pages"
-  tagline: pages
+  name: "UNFUN Ai Project"
+  text: "Awesome Pages"
+  tagline:
   image:
     src: /background.png
-    alt: 背景图
+    alt: background_picture
   actions:
     - theme: brand
       text: Page Introduction
       link: /docs/pages-introduction/pages-introduction
 
 features:
-  - title: 💡 Tips
-    details: Choice is always better than effort.
-  - title: 🧗 Endeavor
-    details: If you do something, you try to do it right.
-  - title: 🤔 Reflections
-    details: Learn to think, don't follow the crowd.
+  - title: 💡 Intelligent
+    details: AI represents artificial intelligence, which has the ability to simulate and mimic human intelligence. It can perform various tasks, including speech recognition, image processing, natural language processing, through learning, reasoning, and problem-solving.
+  - title: 🧗 Learning
+    details: AI has the ability to learn, improve its performance by analyzing large amounts of data and experiences. It can identify patterns, discover rules, and optimize and improve itself based on feedback through machine learning and deep learning algorithms.
+  - title: 🤔 Automation
+    details: AI can automate processes and tasks. It can replace humans in performing tedious, repetitive, or dangerous work, improving efficiency and accuracy. Examples of AI automation include self-driving cars, smart home systems, and robotic assistants.
 ---
-
