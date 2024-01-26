@@ -22,7 +22,7 @@ export default defineConfig({
       }
     ],
     // 侧边栏配置，自动生成侧边栏
-    // sidebar: { "/front-end/react": set_sidebar("front-end/react") },
+    sidebar: { "/docs/python": set_sidebar("docs/python") },
     navbar: true, //开启导航栏
     sidebar: true, // 关闭侧边栏
     lastUpdated: true, // 显示上次修改时间
