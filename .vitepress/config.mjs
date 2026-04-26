@@ -6,8 +6,7 @@ import { defineConfig } from "vitepress";
  * 当前目标：
  * 1. 顶部导航保留 Articles 下拉菜单
  * 2. About 作为常驻独立导航项
- * 3. About 页面内容与 README 定位一致
- * 4. AI+ / Strategy / Supply Chain 作为文章分类入口
+ * 3. AI+ / Strategy / Supply Chain 作为文章分类入口
  */
 export default defineConfig({
   /**
@@ -52,10 +51,6 @@ export default defineConfig({
         text: "Articles",
         items: [
           {
-            text: "Page Introduction",
-            link: "/docs/pages-introduction/pages-introduction",
-          },
-          {
             text: "AI+",
             link: "/docs/ai/",
           },
@@ -90,21 +85,6 @@ export default defineConfig({
             {
               text: "UNFUN AI+",
               link: "/docs/about/",
-            },
-          ],
-        },
-      ],
-
-      /**
-       * 页面介绍
-       */
-      "/docs/pages-introduction/": [
-        {
-          text: "Introduction",
-          items: [
-            {
-              text: "Page Introduction",
-              link: "/docs/pages-introduction/pages-introduction",
             },
           ],
         },
