@@ -96,7 +96,7 @@ export default defineConfig({
      */
     outlineTitle: "文章目录",
     outline: [2, 6],
-    aside: "left",
+    aside: "right",
 
     /**
      * 显示文章最后更新时间
