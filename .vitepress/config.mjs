@@ -2,83 +2,99 @@ import { defineConfig } from "vitepress";
 
 /**
  * VitePress 站点配置
- * 当前站点结构：
  *
- * index.md                                      -> 首页 /
- * docs/ai/index.md                             -> /docs/ai/
- * docs/strategy/index.md                       -> /docs/strategy/
- * docs/supply-chain/index.md                   -> /docs/supply-chain/
- * docs/pages-introduction/pages-introduction.md -> /docs/pages-introduction/pages-introduction
+ * 当前目标：
+ * 1. 顶部导航保留 Articles 下拉菜单
+ * 2. About 作为常驻独立导航项
+ * 3. About 页面内容与 README 定位一致
+ * 4. AI+ / Strategy / Supply Chain 作为文章分类入口
  */
 export default defineConfig({
   /**
    * 网站部署路径
-   * 站点部署在根域名 https://unfun.fun/
-   * 保持 "/"
+   * 当前部署在根域名 https://unfun.fun/
    */
   base: "/",
 
   /**
    * 浏览器标签页图标
-   * 文件来源：public/logo.svg
+   * 对应 public/logo.svg
    */
   head: [["link", { rel: "icon", href: "/logo.svg" }]],
 
   /**
    * 网站标题
-   * 控制左上角站点名称、浏览器标题等
+   * 控制左上角站点名称、浏览器标题
    */
   title: "UNFUN AI+",
 
   /**
    * 网站描述
-   * 主要用于 SEO 和页面元信息
+   * 用于 SEO 和页面元信息
    */
   description: "AI+, Strategy, Digital Transformation, IPD and Integrated Supply Chain",
 
-  /**
-   * 主题配置
-   * 控制导航栏、侧边栏、搜索、页脚等
-   */
   themeConfig: {
     /**
      * 左上角 Logo
-     * 文件来源：public/logo.svg
+     * 对应 public/logo.svg
      */
     logo: "logo.svg",
 
     /**
      * 顶部导航栏
-     * 控制页面右上角的主导航
+     *
+     * Articles：文章分类下拉菜单
+     * About：常驻单独按钮，不放进下拉
      */
     nav: [
       {
-        text: "Home",
-        link: "/",
+        text: "Articles",
+        items: [
+          {
+            text: "Page Introduction",
+            link: "/docs/pages-introduction/pages-introduction",
+          },
+          {
+            text: "AI+",
+            link: "/docs/ai/",
+          },
+          {
+            text: "Strategy",
+            link: "/docs/strategy/",
+          },
+          {
+            text: "Supply Chain",
+            link: "/docs/supply-chain/",
+          },
+        ],
       },
       {
-        text: "Introduction",
-        link: "/docs/pages-introduction/pages-introduction",
-      },
-      {
-        text: "AI+",
-        link: "/docs/ai/",
-      },
-      {
-        text: "Strategy",
-        link: "/docs/strategy/",
-      },
-      {
-        text: "Supply Chain",
-        link: "/docs/supply-chain/",
+        text: "About",
+        link: "/docs/about/",
       },
     ],
 
     /**
-     * 侧边栏
-     * 进入不同目录时，显示对应的左侧菜单
+     * 侧边栏配置
+     * 进入不同文章目录时，显示对应的左侧目录
      */
     sidebar: {
+      /**
+       * About 页面侧边栏
+       */
+      "/docs/about/": [
+        {
+          text: "About",
+          items: [
+            {
+              text: "UNFUN AI+",
+              link: "/docs/about/",
+            },
+          ],
+        },
+      ],
+
       /**
        * 页面介绍
        */
@@ -95,7 +111,7 @@ export default defineConfig({
       ],
 
       /**
-       * AI+ 目录
+       * AI+ 分类
        */
       "/docs/ai/": [
         {
@@ -110,7 +126,7 @@ export default defineConfig({
       ],
 
       /**
-       * Strategy 目录
+       * Strategy 分类
        */
       "/docs/strategy/": [
         {
@@ -125,7 +141,7 @@ export default defineConfig({
       ],
 
       /**
-       * Supply Chain 目录
+       * Supply Chain 分类
        */
       "/docs/supply-chain/": [
         {
@@ -141,8 +157,7 @@ export default defineConfig({
     },
 
     /**
-     * 文章页目录配置
-     * 只影响普通 Markdown 文章页，不影响首页 hero 区域
+     * 文章页目录设置
      */
     outlineTitle: "文章目录",
     outline: [2, 6],
@@ -164,15 +179,15 @@ export default defineConfig({
     ],
 
     /**
-     * 页脚版权
-     * 年份会在每次构建时自动更新
+     * 底部版权
+     * 年份在每次构建时自动更新
      */
     footer: {
       copyright: `© ${new Date().getFullYear()} UNFUN AI+. All rights reserved.`,
     },
 
     /**
-     * 本地搜索配置
+     * 搜索框配置
      */
     search: {
       provider: "local",
@@ -199,9 +214,6 @@ export default defineConfig({
    * Markdown 渲染配置
    */
   markdown: {
-    /**
-     * 代码块显示行号
-     */
     lineNumbers: true,
   },
 });
