@@ -35,7 +35,7 @@ export default defineConfig({
     ],
     // 底部配置
     footer: {
-      copyright: "Copyright@ 2024 UNFUN",
+      copyright: `© ${new Date().getFullYear()} UNFUN AI+. All rights reserved.`,
     },
     // 设置搜索框的样式
     search: {
