@@ -94,7 +94,7 @@ export default defineConfig({
     /**
      * 文章目录设置
      */
-    outlineTitle: "文章目录",
+    outlineTitle: "Contents",
     outline: [2, 6],
     aside: "right",
 
